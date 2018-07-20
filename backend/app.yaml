@@ -1,0 +1,16 @@
+runtime_config:
+    python_version: 2
+
+
+runtime: python27
+api_version: 1
+threadsafe: true
+service: backend
+
+handlers:
+- url: /.*
+  script: main.app
+
+env_variables:
+  # Replace with your Firebase project ID.
+  FIREBASE_PROJECT_ID: 'cssi-tarik'
